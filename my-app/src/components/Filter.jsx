@@ -4,7 +4,7 @@ const Filter = ({
   types,
   setTypes,
 }) => {
-  const locationOptions = ["Remote", "Bangalore", "Hyderabad"];
+  const locationOptions = ["Remote", "Bangalore", "Hyderabad", "Pune", "Chennai", "Delhi", "Mumbai"];
   const typeOptions = ["Full-time", "Internship", "Contract"];
 
   const handleCheckbox = (value, list, setList) => {
@@ -19,7 +19,6 @@ const Filter = ({
     <div className="bg-white p-4 rounded shadow">
       <h2 className="font-semibold mb-2">Filter Jobs</h2>
 
-      {/* Location */}
       <div className="mb-4">
         <h3 className="font-medium mb-1">Location</h3>
         {locationOptions.map((loc) => (
@@ -37,7 +36,6 @@ const Filter = ({
         ))}
       </div>
 
-      {/* Job Type */}
       <div>
         <h3 className="font-medium mb-1">Job Type</h3>
         {typeOptions.map((type) => (

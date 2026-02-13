@@ -36,7 +36,7 @@ const Home = () => {
         </div>
         <div className="w-full md:w-3/4 space-y-6">
           <SearchBar search={search} setSearch={setSearch} />
-          <JobList jobs={filteredJobs} />
+          <JobList jobs={filteredJobs} search={search}/>
         </div>
       </div>
     </>
